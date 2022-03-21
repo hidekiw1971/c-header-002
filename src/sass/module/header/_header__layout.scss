@@ -1,7 +1,7 @@
 @use "global" as *;
 
 // sm size 375px
-.header__mdfy {
+.header__layout {
   min-width: rem(375);
   width: 100%;
   height: rem(50);
@@ -27,6 +27,6 @@
 }
 
 // 中央合わせの為、使う時は削除してok。
-.header__mdfy {
+.header__layout {
   margin: 0 auto;
 }

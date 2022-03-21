@@ -11,10 +11,11 @@
 
 ## portfolio url:
 
-- https://css-md-0003.wtb.cfbx.jp/
+- https://c-0032.wtb.cfbx.jp/
 
 ## 更新履歴
 
+- 2022/3/22 global-menu 追加中
 - 2022/2/23 標準タイプのヘッダー部品を作成。
 - 2022/2/23 初版
 

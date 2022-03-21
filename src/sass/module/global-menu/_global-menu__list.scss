@@ -1,0 +1,9 @@
+@use "global" as *;
+.global-menu__list {
+  @include mq(md) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include mq(xl) {
+  }
+}
