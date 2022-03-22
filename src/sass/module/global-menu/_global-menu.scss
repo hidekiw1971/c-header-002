@@ -1,8 +1,11 @@
 @use "global" as *;
 .global-menu {
+  // express
   display: none;
+  // size
+  height: 100%;
   @include mq(md) {
-    display: inline-block;
+    display: block;
   }
   @include mq(xl) {
   }

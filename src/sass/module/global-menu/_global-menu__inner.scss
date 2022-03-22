@@ -1,8 +1,13 @@
 @use "global" as *;
 .global-menu__inner {
   @include mq(md) {
+    // size
+    height: 100%;
+    // align
     display: flex;
     flex-wrap: wrap;
+    // decoration
+    color: #fff;
   }
   @include mq(xl) {
   }

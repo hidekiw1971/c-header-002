@@ -1,8 +1,12 @@
 @use "global" as *;
 .global-menu__list {
   @include mq(md) {
+    // seize
+    height: 100%;
+    // align
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   @include mq(xl) {
   }
