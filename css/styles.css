@@ -189,6 +189,35 @@ select::-ms-expand {
     color: #fff;
   }
 }
+.global-menu__link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+.global-menu__link::after {
+  position: absolute;
+  bottom: -4px;
+  bottom: -0.25rem;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  height: 0.125rem;
+  background-color: #ffd700;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.global-menu__link:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
 @media screen and (min-width: 768px) {
   .global-menu__list {
     height: 100%;
