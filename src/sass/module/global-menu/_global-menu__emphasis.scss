@@ -1,8 +1,61 @@
 @use "global" as *;
 .global-menu__emphasis {
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+
+  position: relative;
+  // display: block;
+  display: inline-block;
+  color: #fff;
+  background: #007db9;
+  overflow: hidden;
   @include mq(md) {
-    // decoration
-    background-color: #333;
+  }
+  @include mq(xl) {
+  }
+}
+
+.global-menu__emphasis::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  transform: translate3d(-100%, 0, 0);
+  transition: 0.1s;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+.global-menu__emphasis:hover:before {
+  transform: translate3d(0, 0, 0);
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+// 文字の表示（ホバー前）
+.global-menu__emphasis a {
+  position: relative;
+  z-index: 10;
+  transition: 0.3s;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+// 文字の表示（ホバー時）
+.global-menu__emphasis:hover a {
+  // color: #007db9;
+  @include mq(md) {
   }
   @include mq(xl) {
   }
